@@ -1,6 +1,6 @@
 {
-  "name": "react-cpf-cnpj-mask",
-  "version": "0.1.4",
+  "name": "@react-br-forms/cpf-cnpj-mask",
+  "version": "0.1.0",
   "description": "Simple input mask for brazilian CPF and CPNJ",
   "author": "Juliano Grams",
   "main": "App.js",
@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build:prod": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --host 0.0.0.0 --open --mode development",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",

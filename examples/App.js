@@ -27,8 +27,8 @@ const BasicCpfCnpj = () => {
       <br />
       <CpfCnpj
         value={cpfCnpj}
-        onChange={(value, type) => {
-          setCpfCnpj(value);
+        onChange={(ev, type) => {
+          setCpfCnpj(ev.target.value);
           setMask(type === "CPF");
         }}
       />
@@ -47,6 +47,9 @@ const CustomizedCpfCnpj = () => {
       <h2>Customized input</h2>
       <br />
       <CpfCnpj
+        className="customizedInput"
+        placeholder="Digite um CPF ou CNPJ"
+        type="tel"
         value={cpfCnpj}
         onChange={(value, type) => {
           setCpfCnpj(value);

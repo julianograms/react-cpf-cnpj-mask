@@ -8,7 +8,7 @@ const CpfCnpj = (props) => {
   };
   const MAX_LENGTH = clear(TYPES.CNPJ).length;
 
-  const { onChange } = props;
+  const { onChange, type } = props;
 
   let value = clear(props.value);
 
@@ -26,7 +26,9 @@ const CpfCnpj = (props) => {
 
     value = applyMask(value, TYPES[mask]);
 
-    onChange(value, mask);
+    ev.target.value = value;
+
+    onChange(ev, mask);
   }
 
   function getMask(value) {
@@ -51,12 +53,20 @@ const CpfCnpj = (props) => {
     return value && value.replace(/[^0-9]/g, "");
   }
 
-  return <input {...props} type="tel" value={value} onChange={onLocalChange} />;
+  return (
+    <input {...props} type={type} value={value} onChange={onLocalChange} />
+  );
 };
 
 CpfCnpj.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
+};
+
+CpfCnpj.defaultProps = {
+  type: "tel",
+  value: "",
+  onChange: () => {},
 };
 
 export default CpfCnpj;

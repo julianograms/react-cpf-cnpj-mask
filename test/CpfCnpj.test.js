@@ -1,14 +1,14 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import CpfCnpj from "./CpfCnpj";
+import CpfCnpj from "../src/CpfCnpj";
 
 const map = (fn) => (mappable) => mappable.map(fn);
 
 const ShallowCpfCnpj = function (value) {
   this.output = value;
   this.onChange = (value) => {
-    this.output = value;
+    this.output = value.target.value;
   };
 
   const whithComponentOutput = (valueToBePressed) => {
