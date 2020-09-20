@@ -1,9 +1,9 @@
 {
   "name": "@react-br-forms/cpf-cnpj-mask",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Simple input mask for brazilian CPF and CPNJ",
   "author": "Juliano Grams",
-  "main": "App.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "keywords": [
     "cpf",
