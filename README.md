@@ -1,5 +1,7 @@
 # Simple CPF and CNPJ input mask.
 
+![Azure Static Web Apps CI/CD](https://github.com/julianograms/react-cpf-cnpj-mask/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
+
 ![ttystrudio GIF](https://imgur.com/uZoDA6O.gif)
 
 This is an `<input />` wrapper to mask the value (**_which can be either a CPF or CNPJ_**) with the corresponding brazilian format mask, as you type. \
