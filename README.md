@@ -14,7 +14,7 @@ Os props são copiados diretamente para um `<input />`, permitindo customizaçã
 
 ### Demo
 
-- **[Demo](https://agreeable-ocean-09191400f.azurestaticapps.net)**
+<a href="https://agreeable-ocean-09191400f.azurestaticapps.net" target="_blank">Demo</a>
 
 ## Installation
 
