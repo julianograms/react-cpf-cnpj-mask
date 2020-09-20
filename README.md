@@ -8,7 +8,7 @@ This is an `<input />` wrapper to mask the value (**_which can be either a CPF o
 It will apply all the props given to it, to an input field, enabling any customization.
 **No dependencies included.**
 
-Este é um componente que encapsula um `<input />`, com o objetivo de adicionar a máscara correspondente no valor (Podendo ser CPF ou CPNJ) do input enquanto você digita.
+Este é um componente que encapsula um `<input />`, com o objetivo de adicionar a máscara correspondente no valor (Podendo ser CPF ou CNPJ) do input enquanto você digita.
 Os props são copiados diretamente para um `<input />`, permitindo customização.
 **Não possui dependendências.**
 
@@ -77,9 +77,6 @@ const App = () => {
           setMask(type === "CPF");
         }}
       />
-      <br />
-      <h4>Masked value: {cpfCnpj}</h4>
-      <h4>Mask: {getDocumentTypeDescription(cpfCnpj, mask)}</h4>
     </div>
   );
 };
@@ -90,11 +87,11 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## Component Props
 
-|            Name             |       Type        | DefaultProps | Description                                                                                                                                  |
-| :-------------------------: | :---------------: | :----------: | :------------------------------------------------------------------------------------------------------------------------------------------- |
-|    **[`value`](#value)**    |     `String`      |     `""`     | Wrapped `<input/>` value. This value will be masked.                                                                                         |  |
-| **[`onChange`](#onChange)** | `Function(event)` |  `() => {}`  | Wrapped `onChange` input function. This function will be called after the `<input/>` `onChange` function. The `target.value` will be masked. |
-|     **[`type`](#type)**     |     `String`      |    `tel`     | Default input type is `tel`.                                                                                                                 |
+|            Name             |          Type           | DefaultProps | Description                                                                                                                                |
+| :-------------------------: | :---------------------: | :----------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
+|    **[`value`](#value)**    |        `String`         |     `""`     | Wrapped `<input/>` value. This value will be masked.                                                                                       |  |
+| **[`onChange`](#onChange)** | `Function(event, type)` |  `() => {}`  | `event`: Wrapped `onChange` input event. The `target.value` will be masked. <br /><br /> `type`: It will return either `"CPF"` or `"CNPJ"` |
+|     **[`type`](#type)**     |        `String`         |    `tel`     | Default input type is `tel`.                                                                                                               |
 
 ## About the repository
 
