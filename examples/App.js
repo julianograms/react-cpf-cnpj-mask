@@ -51,8 +51,8 @@ const CustomizedCpfCnpj = () => {
         placeholder="Digite um CPF ou CNPJ"
         type="tel"
         value={cpfCnpj}
-        onChange={(value, type) => {
-          setCpfCnpj(value);
+        onChange={(ev, type) => {
+          setCpfCnpj(ev.target.value);
           setMask(type === "CPF");
         }}
       />
