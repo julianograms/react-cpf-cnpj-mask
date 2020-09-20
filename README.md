@@ -10,6 +10,10 @@ Este é um componente que encapsula um `<input />`, com o objetivo de adicionar 
 Os props são copiados diretamente para um `<input />`, permitindo customização.
 **Não possui dependendências.**
 
+### Demo
+
+- **[Demo](https://agreeable-ocean-09191400f.azurestaticapps.net)**
+
 ## Installation
 
 ```shell
