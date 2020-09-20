@@ -2,7 +2,7 @@
 
 ![Azure Static Web Apps CI/CD](https://github.com/julianograms/react-cpf-cnpj-mask/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
 
-![ttystrudio GIF](https://imgur.com/uZoDA6O.gif)
+![ttystrudio GIF](https://imgur.com/VA7PT8i.gif)
 
 This is an `<input />` wrapper to mask the value (**_which can be either a CPF or CNPJ_**) with the corresponding brazilian format mask, as you type. \
 It will apply all the props given to it, to an input field, enabling any customization.
@@ -12,7 +12,7 @@ Este é um componente que encapsula um `<input />`, com o objetivo de adicionar 
 Os props são copiados diretamente para um `<input />`, permitindo customização.
 **Não possui dependendências.**
 
-### Demo
+## Demo :imp:
 
 <a href="https://agreeable-ocean-09191400f.azurestaticapps.net" target="_blank">Demo</a>
 
@@ -40,8 +40,8 @@ const App = () => {
     <div>
       <CpfCnpj
         value={cpfCnpj}
-        onChange={(value, type) => {
-          setCpfCnpj(value);
+        onChange={(event, type) => {
+          setCpfCnpj(ev.target.value);
           setMask(type === "CPF");
         }}
       />
@@ -72,8 +72,8 @@ const App = () => {
         placeholder="Digite um CPF ou CNPJ"
         type="tel"
         value={cpfCnpj}
-        onChange={(value, type) => {
-          setCpfCnpj(value);
+        onChange={(event, type) => {
+          setCpfCnpj(ev.target.value);
           setMask(type === "CPF");
         }}
       />
