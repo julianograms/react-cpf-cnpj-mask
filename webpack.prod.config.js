@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./src/CpfCnpj.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve("lib"),
-    filename: "CpfCnpj.js",
+    filename: "index.js",
     libraryTarget: "commonjs2",
   },
   module: {
