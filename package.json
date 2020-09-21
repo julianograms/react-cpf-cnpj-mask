@@ -1,6 +1,6 @@
 {
   "name": "@react-br-forms/cpf-cnpj-mask",
-  "version": "0.1.4",
+  "version": "1.0.6",
   "description": "Simple input mask for brazilian CPF and CNPJ",
   "author": "Juliano Grams",
   "main": "lib/index.js",
