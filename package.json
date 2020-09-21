@@ -1,6 +1,6 @@
 {
   "name": "@react-br-forms/cpf-cnpj-mask",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Simple input mask for brazilian CPF and CNPJ",
   "author": "Juliano Grams",
   "main": "lib/index.js",
@@ -20,7 +20,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianograms/react-cpf-cnpj-mask.git"
+    "url": "https://github.com/react-br-forms/cpf-cnpj-mask.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "resolutions": {
     "styled-components": "^5"
