@@ -25,9 +25,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "resolutions": {
-    "styled-components": "^5"
-  },
   "scripts": {
     "build:prod": "webpack --mode production",
     "build": "webpack --mode production",
@@ -39,34 +36,30 @@
     "lint:css": "stylelint './src/**/*.js'"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-jest": "^27.3.1",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.11.1",
-    "css-loader": "^3.5.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^3.6.0",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "html-loader": "^1.3.0",
-    "html-webpack-plugin": "^4.4.1",
+    "html-loader": "^3.0.0",
+    "html-webpack-plugin": "^5.4.0",
     "jest": "^27.3.1",
     "jest-enzyme": "^7.1.2",
-    "jest-styled-components": "^7.0.3",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "style-loader": "^1.1.3",
-    "stylelint": "^13.7.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config-recommended": "^6.0.0",
     "stylelint-custom-processor-loader": "^0.6.0",
-    "stylelint-processor-styled-components": "^1.10.0",
     "webpack": "^5.59.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
