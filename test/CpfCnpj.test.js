@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import CpfCnpj from "../src/CpfCnpj";
+import CpfCnpj from "../src";
 
 const map = (fn) => (mappable) => mappable.map(fn);
 
